@@ -1,0 +1,16 @@
+[color]
+  ui = auto
+[user]
+  name = Taylor Erwin
+  email = j.taylor.e@gmail.com
+[alias]
+  lolb = log --oneline --decorate
+  lol = log --oneline --graph --decorate --all
+  co = checkout
+  ci = commit
+  br = branch
+  stat = status
+  st = status
+[core]
+  excludesfile = ~/.gitignore
+	whitespace = trailing-space,space-before-tab
