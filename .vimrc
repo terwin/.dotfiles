@@ -31,6 +31,11 @@ set showcmd
 set laststatus=2
 set ruler
 
+"set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+let g:Powerline_symbols="fancy"
+"let g:Powerline_colorscheme="skwp"
+
 "hi Search ctermbg=cyan
 
 set mouse=a
@@ -50,8 +55,6 @@ set formatoptions=croql
 set whichwrap=h,l,~,[,]
 set ignorecase
 set smartcase
-
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 "let g:lua_inspect_events = ''
 "let g:lua_inspect_warnings = 0

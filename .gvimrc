@@ -4,7 +4,7 @@ set background=dark
 colorscheme solarized
 set lines=62
 
-set guifont=Inconsolata\ Medium\ 12,Monospace\ 10
+set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10,Inconsolata-dz\ Medium\ 10,Inconsolata\ Medium\ 12,Monospace\ 10
 
 if v:version >= 703
   set columns=83
