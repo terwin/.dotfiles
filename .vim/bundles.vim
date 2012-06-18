@@ -19,6 +19,7 @@ Bundle 'tpope/vim-unimpaired'
 
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
 
 Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 
