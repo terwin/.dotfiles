@@ -4,6 +4,7 @@
   name = Taylor Erwin
   email = j.taylor.e@gmail.com
 [alias]
+  dot = !git --git-dir=/home/terwin/.dotfiles/.git --work-tree=/home/terwin
   lolb = log --oneline --decorate
   lol = log --oneline --graph --decorate --all
   co = checkout
