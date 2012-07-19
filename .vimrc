@@ -31,6 +31,8 @@ set showcmd
 set laststatus=2
 set ruler
 
+set hidden
+
 "set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 let g:Powerline_symbols="fancy"
@@ -71,5 +73,5 @@ au BufNewFile,BufRead *.mf90 set filetype=fortran
 au BufNewFile,BufRead *.f90,*.F90,*.mf90 let b:fortran_do_enddo=1
 "au BufNewFile,BufRead *.m,*.oct setf octave
 
-nnoremap <Leader>n :execute 'normal! ' . <c-r><c-w> . 'j'<CR>
+nnoremap <Leader>n m':execute 'normal! ' . <c-r><c-w> . 'j'<CR>
 nnoremap <Leader>h :nohlsearch<CR>
