@@ -1,9 +1,0 @@
-!
-! Make Caps_Lock work as Escape
-! Make Scroll_Lock work as Caps_Lock
-!
-
-remove Lock = Caps_Lock
-keysym Caps_Lock = Escape
-keysym Scroll_Lock = Caps_Lock
-add Lock = Caps_Lock
