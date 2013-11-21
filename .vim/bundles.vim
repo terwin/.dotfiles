@@ -9,11 +9,31 @@ Bundle 'gmarik/vundle'
 
 Bundle 'altercation/vim-colors-solarized'
 
+Bundle 'SearchComplete'
+
 Bundle 'matchit.zip'
 Bundle 'sjl/gundo.vim'
 Bundle 'kien/ctrlp.vim'
 
-Bundle 'jezcope/vim-align'
+Bundle 'AutoTag'
+Bundle 'majutsushi/tagbar'
+
+Bundle 'tomtom/tcomment_vim'
+
+Bundle 'Yggdroot/indentLine'
+
+"Bundle 'jezcope/vim-align'
+Bundle 'godlygeek/tabular'
+
+"Bundle 'peterhoeg/vim-tmux'
+"Bundle 'kana/vim-fakeclip'
+
+Bundle 'CountJump'
+Bundle 'ShowTrailingWhitespace'
+Bundle 'DeleteTrailingWhitespace'
+Bundle 'JumpToTrailingWhitespace'
+
+Bundle 'IndexedSearch'
 
 Bundle 'tpope/vim-unimpaired'
 
@@ -21,8 +41,31 @@ Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'gregsexton/gitv'
 
-Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+"Bundle 'airblade/vim-gitgutter'
+Bundle 'mhinz/vim-signify'
 
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+"Bundle 'git://atp-vim.git.sourceforge.net/gitroot/atp-vim/atp-vim'
+Bundle 'LaTeX-Box-Team/LaTeX-Box'
+Bundle 'LaTeX-Help'
+
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
+
+Bundle 'ervandew/supertab'
+Bundle 'SirVer/ultisnips'
+
+Bundle 'VisIncr'
+
+Bundle 'AndrewRadev/linediff.vim'
+
+Bundle 'chrisbra/NrrwRgn'
+
+" Bundle 'sjl/vitality.vim'
+" Bundle 'Greduan/vim-numbertoggle'
+" Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'myusuf3/numbers.vim'
+
+Bundle 'bootleq/LargeFile'
 
 filetype plugin indent on

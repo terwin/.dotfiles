@@ -1,4 +1,5 @@
 *.[oa]
+*.LINUX64
 *.mod
 *~
 .*.swp

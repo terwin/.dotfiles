@@ -4,7 +4,7 @@
   name = Taylor Erwin
   email = j.taylor.e@gmail.com
 [alias]
-  dot = !git --git-dir=/home/terwin/.dotfiles/.git --work-tree=/home/terwin
+  dot = !git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME
   lolb = log --oneline --decorate
   lol = log --oneline --graph --decorate --all
   co = checkout
@@ -12,6 +12,17 @@
   br = branch
   stat = status
   st = status
+  rall = "!f() { git branch --contains $2 | sed -re 's/\\s|\\*//g' | xargs -n 1 git rebase $1; }; f"
+  edit-tag = "!f() { echo GIT_COMMITTER_DATE=\"$(git for-each-ref --format '%(taggerdate:raw)' refs/tags/$1)\" git tag $1 $1 -f -a; }; f"
+  empty-tree-sha1 = hash-object -t tree /dev/null
+  graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
 [core]
   excludesfile = ~/.gitignore
 	whitespace = trailing-space,space-before-tab
+	pager = (which my_pager &>/dev/null) && my_pager || less
+[help]
+	autocorrect = 1
+[rerere]
+	enabled = true
+[merge]
+	conflictstyle = diff3
