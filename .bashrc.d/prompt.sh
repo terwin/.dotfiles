@@ -8,7 +8,8 @@ function PWD
   local tmp
   PWDn=${PWD/$HOME/\~};
   # PWDn=${PWDn/\/home\//\~};
-  PWDn=${PWDn/${HOME/\/$USER/}\//\~}
+  local home_base=${HOME/\/$USER/}
+  PWDn=${PWDn/${home_base}\//\~}
   tmp=${PWDn%/*/*};
   [ ${#tmp} -gt 0 -a "$tmp" != "$PWDn" ] && echo .../${PWDn:${#tmp}+1} || echo $PWDn;
 }
