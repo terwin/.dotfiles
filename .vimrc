@@ -42,7 +42,7 @@ endif
 " persistent undo
 if v:version >= 703
   set undolevels=1000
-  set undodir=/scr/terwin/.tmp
+  set undodir=$HOME/.vim/undo
   set undofile
 endif
 
