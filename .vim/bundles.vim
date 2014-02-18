@@ -9,6 +9,8 @@ Bundle 'gmarik/vundle'
 
 Bundle 'altercation/vim-colors-solarized'
 
+Bundle 'christoomey/vim-tmux-navigator'
+
 Bundle 'SearchComplete'
 
 Bundle 'matchit.zip'
