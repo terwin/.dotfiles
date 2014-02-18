@@ -64,7 +64,9 @@ Bundle 'chrisbra/NrrwRgn'
 " Bundle 'sjl/vitality.vim'
 " Bundle 'Greduan/vim-numbertoggle'
 " Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-Bundle 'myusuf3/numbers.vim'
+if v:version >= 703
+  Bundle 'myusuf3/numbers.vim'
+endif
 
 Bundle 'bootleq/LargeFile'
 
