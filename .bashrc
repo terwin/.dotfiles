@@ -1,5 +1,9 @@
 # .bashrc
 
+test -n "$_BASHRC_LOADED" && exit
+
+export _BASHRC_LOADED=1
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
   . /etc/bashrc
