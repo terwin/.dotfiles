@@ -39,6 +39,12 @@ if &term =~ "rxvt-unicode"
   let &t_EI .= "\<Esc>[2 q"
   " let g:solarized_termtrans = 1
 endif
+
+if $TERM_PROGRAM ==? "iterm.app"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
 " persistent undo
 if v:version >= 703
   set undolevels=1000
