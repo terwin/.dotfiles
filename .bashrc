@@ -9,7 +9,7 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
-export TERM_PROGRAM=$TERM
+# export TERM_PROGRAM=$TERM
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 shopt -s histappend
