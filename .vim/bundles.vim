@@ -46,6 +46,8 @@ Bundle 'gregsexton/gitv'
 "Bundle 'airblade/vim-gitgutter'
 Bundle 'mhinz/vim-signify'
 
+Bundle 'tpope/vim-dispatch'
+
 "Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 "Bundle 'git://atp-vim.git.sourceforge.net/gitroot/atp-vim/atp-vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
