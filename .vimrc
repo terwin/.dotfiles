@@ -235,6 +235,7 @@ augroup myFileTypes
   "au BufNewFile,BufRead *.m,*.oct setf octave
   au BufNewFile,BufRead *.wxm setf maxima
   au BufNewFile,BufRead Tupfile,*.tup setf tup
+  au BufNewFile,BufRead .tmux.conf*,tmux.conf* setf tmux
 augroup END
 
 nnoremap <Leader>n m':execute 'normal! ' . <c-r><c-w> . 'j'<CR>
