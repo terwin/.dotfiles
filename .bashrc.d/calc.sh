@@ -1,5 +1,7 @@
 calc()
 {
+  local input=$(echo "$@" | sed -r -e 's/([+]|(-))?([0-9]*\.?[0-9]+|[0-9]+\.?[0-9]*)[eE]([+]|(-))?([0-9]+)/(\2\3*10^\5\6)/g')
+
   bc -l <<DONE
 scale = 20
 
@@ -39,7 +41,7 @@ define abs(x) {
   return (-x)
 }
 
-$@
+$input
 
 DONE
 }
